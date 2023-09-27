@@ -47,10 +47,8 @@ room_photos = {
 
 }
 
-def start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text('\U0001F47E:\nПривет! Я навигационнный бот.\n напиши /help что бы увидеть стартовые команлы.\n')
 
-def help(update: Update, context: CallbackContext) -> None:
+def help2(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('\n\U0001F47E:\n Вам нужно написать /kab [пробел] номер кабинета\n Пример: /kab 323 \n После вы получите фото и расположение кабинета \n Так же что бы посмотреть этаж нужно написать\n /kab [пробел][номер этажа]\n Пример: /kab 1')
 
 def send_photo(update: Update, context: CallbackContext) -> None:
